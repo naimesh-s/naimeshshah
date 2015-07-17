@@ -5,9 +5,10 @@ import lombok.Setter;
 
 
 @Getter
-@Setter
+
 public class EmployeeDetails {
 	
+	@Setter
 	private String empId;
 	private String empName;
 	private String empMailId;
