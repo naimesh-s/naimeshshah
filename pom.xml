@@ -28,12 +28,12 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-core</artifactId>
 			<version>${spring.version}</version>
-			<exclusions>
-				<exclusion>
-					<groupId>commons-logging</groupId>
-					<artifactId>commons-logging</artifactId>
-				</exclusion>
-			</exclusions>
+		</dependency>
+		
+		<dependency>
+       	 	<groupId>commons-logging</groupId>
+       	 	<artifactId>commons-logging</artifactId>
+       	 	<version>1.1.1</version>
 		</dependency>
 
 		<dependency>
@@ -49,19 +49,37 @@
 		</dependency>
 		
 		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-tx</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		
+		
+		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<version>${lombok.version}</version>
 			<scope>provided</scope>
 		</dependency>
 		
+		<dependency>
+    		<groupId>org.springframework</groupId>
+    		<artifactId>spring-jdbc</artifactId>
+    		<version>${spring.version}</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.springframework</groupId>
+    		<artifactId>spring-orm</artifactId>
+    		<version>${spring.version}</version>
+		</dependency>
+
 		<!-- hibernate dependencies -->
 		<dependency>
 			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-entitymanager</artifactId>
-			<version>4.3.10.Final</version>
+			<artifactId>hibernate-core</artifactId>
+			<version>3.6.3.Final</version>
 		</dependency>
-
 		
 		<!-- MySQL database driver -->
 		<dependency>
@@ -69,6 +87,14 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<version>5.1.9</version>
 		</dependency>
+		
+		<!-- Jackson JSON Mapper -->  
+ 		<dependency>  
+   		<groupId>org.codehaus.jackson</groupId>  
+  		 	<artifactId>jackson-mapper-asl</artifactId>  
+  		 	<version>1.9.10</version>  
+  		</dependency>
+  		
   </dependencies>
   
   <build>
