@@ -16,6 +16,12 @@
 	</properties>
 	
   <dependencies>
+  		<dependency>
+    		<groupId>javassist</groupId>
+    		<artifactId>javassist</artifactId>
+    		<version>3.12.1.GA</version>
+		</dependency>
+		
     	<!-- Unit Test -->
 		<dependency>
 			<groupId>junit</groupId>
@@ -94,47 +100,9 @@
   		 	<artifactId>jackson-mapper-asl</artifactId>  
   		 	<version>1.9.10</version>  
   		</dependency>
-  		
   </dependencies>
   
   <build>
 		<finalName>myapp</finalName>
-	
-	<!-- 	<plugins>
-			Eclipse project
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-eclipse-plugin</artifactId>
-				<version>2.9</version>
-				<configuration>
-					Always download and attach dependencies source code
-					<downloadSources>true</downloadSources>
-					<downloadJavadocs>false</downloadJavadocs>
-					Avoid type mvn eclipse:eclipse -Dwtpversion=2.0
-					<wtpversion>2.0</wtpversion>
-				</configuration>
-			</plugin>
-
-			Set JDK Compiler Level
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>2.3.2</version>
-				<configuration>
-					<source>${jdk.version}</source>
-					<target>${jdk.version}</target>
-				</configuration>
-			</plugin>
-
-			For Maven Tomcat Plugin
-			<plugin>
-				<groupId>org.apache.tomcat.maven</groupId>
-				<artifactId>tomcat7-maven-plugin</artifactId>
-				<version>2.2</version>
-				<configuration>
-					<path>/myapp</path>
-				</configuration>
-			</plugin>
-		</plugins> -->
 	</build>
 </project>

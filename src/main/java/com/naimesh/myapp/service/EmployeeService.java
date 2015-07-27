@@ -10,7 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.naimesh.myapp.dao.EmployeeDao;
 import com.naimesh.myapp.domain.EmployeeDetail;
 
-@Service("employeeService")
+@Service
 @Transactional	
 public class EmployeeService {
 	

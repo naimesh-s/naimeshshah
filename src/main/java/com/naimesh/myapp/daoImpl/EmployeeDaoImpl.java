@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 import com.naimesh.myapp.dao.EmployeeDao;
 import com.naimesh.myapp.domain.EmployeeDetail;
 
-@Repository("employeeDao")
+@Repository
 public class EmployeeDaoImpl implements EmployeeDao{
 
 	@Autowired

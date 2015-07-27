@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import com.naimesh.myapp.domain.EmployeeDetail;
 import com.naimesh.myapp.service.EmployeeService;
 
-@Controller()
+@Controller
 public class EmployeeController {
 
 	@Autowired
