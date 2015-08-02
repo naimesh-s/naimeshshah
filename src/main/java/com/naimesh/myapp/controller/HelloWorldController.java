@@ -9,8 +9,10 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class HelloWorldController {
+	
 	String message = "Welcome to Spring MVC!";
 	Date date = new Date();
+	
 	@RequestMapping("/hello")
 	public ModelAndView showMessage(
 			@RequestParam(value = "name", required = false, defaultValue = "World") String name) {

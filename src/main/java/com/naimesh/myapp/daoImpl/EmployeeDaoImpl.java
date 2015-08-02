@@ -23,12 +23,12 @@ public class EmployeeDaoImpl implements EmployeeDao{
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<EmployeeDetail> listOfEmployees() {
-		return (List<EmployeeDetail>)sessionFactory.getCurrentSession().createCriteria(EmployeeDao.class).list();
+		return (List<EmployeeDetail>)sessionFactory.getCurrentSession().createCriteria(EmployeeDetail.class).list();
 	}
 
 	@Override
 	public EmployeeDetail getEmployee(String eId) {
-		return (EmployeeDetail) sessionFactory.getCurrentSession().get(EmployeeDao.class, eId);
+		return (EmployeeDetail) sessionFactory.getCurrentSession().get(EmployeeDetail.class, eId);
 	}
 
 	@Override
